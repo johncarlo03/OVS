@@ -154,7 +154,7 @@
                     <thead>
                         <tr class="!font-bold">
                             <th>#</th>
-                            <th>Positions</th>
+                            <th>Positionss</th>
                             <th>Candidate</th>
                             <th>Total Vote</th>
                         </tr>
