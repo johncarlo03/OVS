@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #212a69, #5fc0d4);
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+  
+  .login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 30rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .mode-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid #344182;
+  }
+  
+  .toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none; /* Remove individual borders */
+    cursor: pointer;
+    font-weight: bold;
+    color: #344182;
+    background-color: white;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .toggle-btn:first-child {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+  }
+  
+  .toggle-btn:last-child {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+  }
+  
+  .toggle-btn.active {
+    background-color: #344182;
+    color: white;
+  }
+  
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.2rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #c7c7ff;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2b3677;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #1f285a;
+  }
+  
+  .forgot-password {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+
+  /* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .toggle-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .input-group input {
+    padding: 10px 35px 10px 12px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .forgot-password {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
